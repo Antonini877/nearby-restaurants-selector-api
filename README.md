@@ -12,4 +12,5 @@ Query nearby restaurants given a geolocation and distance.
     <li>Request and response structure</li>
     <li>Auth token</li>
     <li>Exceptions handling</li>
+    <li>Tests</li>
 </ol>
