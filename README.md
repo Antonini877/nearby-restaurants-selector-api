@@ -1,9 +1,9 @@
 # nearby-restaurants-selector-api
 Query nearby restaurants given a geolocation and distance.
 
-<h2 style="color:pink;">To do list </h3>
+<h2>To do list </h3>
 <ol>
-    <li>Geolocation API spike</li>
+    <li>Geolocation API spike</li> 
     <li>Database design</li> 
     <li>Data pipeline</li>
     <li>Container design</li> 
@@ -14,3 +14,28 @@ Query nearby restaurants given a geolocation and distance.
     <li>Exceptions handling</li>
     <li>Tests</li>
 </ol>
+
+<h2>Running locally</h2>
+
+- Install Docker
+
+- Run the following command to create images and run the containers
+
+```console
+foo@bar:~$ docker compose up -d
+```
+- Check if MySQL is ready for connections
+
+```console
+foo@bar:~$ docker logs CONTAINER_ID
+```
+
+- Check if the MySQL table is available
+
+```console
+foo@bar:~$ docker exec -it db mysql 
+```
+
+```console
+mysql> SELECT * FROM restaurants_geolocation_api.restaurants LIMIT 10;
+```
