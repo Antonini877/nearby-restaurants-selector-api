@@ -30,7 +30,7 @@ foo@bar:~$ docker compose up -d
 foo@bar:~$ docker logs CONTAINER_ID
 ```
 
-- Check if the MySQL table is available
+- Check if MySQL table is available
 
 ```console
 foo@bar:~$ docker exec -it CONTAINER_ID mysql -p
