@@ -18,24 +18,41 @@ Query nearby restaurants given a geolocation and distance.
 <h2>Running locally</h2>
 
 - Install Docker
+```
+sudo apt-get install docker.io
+sudo apt install docker-compose
+```
+
+needed this but dont know why
+```
+ systemctl start docker
+ systemctl enable docker
+```
+
+
 
 - Run the following command to create images and run the containers
 
 ```console
-foo@bar:~$ docker compose up -d
+sudo docker-compose up -d
 ```
+
 - Check if MySQL is ready for connections
 
 ```console
-foo@bar:~$ docker logs CONTAINER_ID
+docker logs CONTAINER_ID
 ```
 
 - Check if MySQL table is available
 
 ```console
-foo@bar:~$ docker exec -it CONTAINER_ID mysql -p
+docker exec -it CONTAINER_ID mysql -p
 ```
 
 ```console
 mysql> SELECT * FROM restaurants_geolocation_api.restaurants LIMIT 10;
 ```
+
+
+
+
