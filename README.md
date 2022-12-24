@@ -18,13 +18,13 @@ Query nearby restaurants given a geolocation and distance.
 <h2>Running locally</h2>
 
 - Install Docker
-```
+```console
 sudo apt-get install docker.io
 sudo apt install docker-compose
 ```
 
 needed this but dont know why
-```
+```console
  systemctl start docker
  systemctl enable docker
 ```
