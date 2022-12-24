@@ -15,6 +15,10 @@ Query nearby restaurants given a geolocation and distance.
     <li>Tests</li>
 </ol>
 
+<h2>Coverage area in São Paulo</h2>
+
+<img src="data/area.png" width="800">
+
 <h2>Running locally</h2>
 
 - Install Docker
