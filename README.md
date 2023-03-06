@@ -76,7 +76,8 @@ mysql> SELECT * FROM restaurants_geolocation_api.restaurants LIMIT 10;
 curl 127.0.0.1:8080/api/v1
 ```
 <h3>Expected:</h3>
-```json
+
+```javascript
 {"environment":"localhost","status":"up"}
 ```
 
