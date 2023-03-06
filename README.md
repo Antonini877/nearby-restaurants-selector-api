@@ -34,7 +34,8 @@ foo@bar/project:~$ sudo apt-get install docker.io
 foo@bar/project:~$ sudo apt install docker-compose
 ```
 
-needed this but dont know why
+- Start Docker daemon
+
 ```console
  foo@bar/project:~$ systemctl start docker
  foo@bar/project:~$ systemctl enable docker
