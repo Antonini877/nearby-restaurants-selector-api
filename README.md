@@ -24,46 +24,38 @@ Query nearby restaurants given a geolocation and distance.
 - Build SpringBoot application with gradle
 
 ```console
-cd app
+foo@bar/project/app:~$ gradlew build
 ```
-
-```console
-gradlew build
-```
-
-```console
-cd ..
-```
-
 
 - Install Docker
+
 ```console
-sudo apt-get install docker.io
-sudo apt install docker-compose
+foo@bar/project:~$ sudo apt-get install docker.io
+foo@bar/project:~$ sudo apt install docker-compose
 ```
 
 needed this but dont know why
 ```console
- systemctl start docker
- systemctl enable docker
+ foo@bar/project:~$ systemctl start docker
+ foo@bar/project:~$ systemctl enable docker
 ```
 
 - Run the following command to create images and run the containers
 
 ```console
-sudo docker-compose up -d
+foo@bar/project:~$ sudo docker-compose up -d
 ```
 
 - Check if MySQL is ready for connections
 
 ```console
-docker logs CONTAINER_ID
+foo@bar/project:~$ docker logs CONTAINER_ID
 ```
 
 - Check if MySQL table is available
 
 ```console
-docker exec -it CONTAINER_ID mysql -p
+foo@bar/project:~$ docker exec -it CONTAINER_ID mysql -p
 ```
 
 ```console
@@ -73,7 +65,7 @@ mysql> SELECT * FROM restaurants_geolocation_api.restaurants LIMIT 10;
 - Check if API status is up
 
 ```console
-curl 127.0.0.1:8080/api/v1
+foo@bar/project:~$ curl 127.0.0.1:8080/api/v1
 ```
 <h3>Expected:</h3>
 
