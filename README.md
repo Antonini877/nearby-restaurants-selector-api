@@ -21,6 +21,21 @@ Query nearby restaurants given a geolocation and distance.
 
 <h2>Running locally</h2>
 
+- Build SpringBoot application with gradle
+
+```console
+cd app
+```
+
+```console
+gradlew build
+```
+
+```console
+cd ..
+```
+
+
 - Install Docker
 ```console
 sudo apt-get install docker.io
@@ -33,23 +48,7 @@ needed this but dont know why
  systemctl enable docker
 ```
 
-
-
 - Run the following command to create images and run the containers
-
-```console
-cd app
-```
-- Build SpringBoot application with gradle
-
-```console
-gradlew build
-```
-
-```console
-cd ..
-```
-
 
 ```console
 sudo docker-compose up -d
