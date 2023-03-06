@@ -38,6 +38,20 @@ needed this but dont know why
 - Run the following command to create images and run the containers
 
 ```console
+cd app
+```
+- Build SpringBoot application with gradle
+
+```console
+gradlew build
+```
+
+```console
+cd ..
+```
+
+
+```console
 sudo docker-compose up -d
 ```
 
