@@ -1,4 +1,4 @@
-package com.api.app;
+package com.api.app.controller;
 
 import java.util.concurrent.atomic.AtomicLong;
 import org.springframework.beans.factory.annotation.Value;
