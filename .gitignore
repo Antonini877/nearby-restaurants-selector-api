@@ -1,0 +1,8 @@
+# Arquivos de configuração sensíveis do Spring Boot
+app/src/main/resources/application.properties
+app/src/main/resources/application-*.properties
+
+.env
+*.csv
+*/.gradle
+app/build

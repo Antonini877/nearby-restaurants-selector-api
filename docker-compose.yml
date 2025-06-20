@@ -1,0 +1,31 @@
+version: '3.5'
+services:
+
+    database:
+        image: db
+        build: ./.db
+        ports:
+            - "3306:3306"
+        expose:
+            - 3306
+        environment:
+            MYSQL_ROOT_PASSWORD: root
+            MYSQL_DATABASE: restaurants_geolocation_api
+        volumes:
+            - db-volume:/var/lib/mysql
+    
+    application:
+        image: app
+        build: ./app
+        ports:
+            - "8080:8080"
+        expose:
+            - 8080
+        volumes:
+            - application-volume:/tmp
+
+
+volumes:
+    db-volume:
+
+    application-volume:
